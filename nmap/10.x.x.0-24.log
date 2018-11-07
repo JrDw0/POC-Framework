@@ -1,0 +1,37 @@
+# Nmap 7.60 scan initiated Mon Sep 25 10:09:55 2017 as: nmap -v -A -p1-65535 -oN 10.x.x.0-24.log 10.x.x.0/24
+
+Nmap scan report for 10.234.8.1
+Host is up (0.00037s latency).
+Not shown: 65524 closed ports
+PORT     STATE    SERVICE        VERSION
+22/tcp   open     ssh            OpenSSH 4.3 (protocol 2.0)
+
+53/tcp   open     domain         ISC BIND 9.6-ESV-R11-P1
+
+135/tcp  filtered msrpc
+136/tcp  filtered profile
+137/tcp  filtered netbios-ns
+138/tcp  filtered netbios-dgm
+139/tcp  filtered netbios-ssn
+161/tcp  open     snmp?
+443/tcp  open     ssl/http       Apache httpd (F5 BIG-IP load balancer)
+
+445/tcp  filtered microsoft-ds
+4353/tcp open     ssl/f5-iquery?
+
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+
+Uptime guess: 29.301 days (since Sun Aug 27 03:00:59 2017)
+Network Distance: 4 hops
+TCP Sequence Prediction: Difficulty=196 (Good luck!)
+IP ID Sequence Generation: All zeros
+Service Info: Device: load balancer
+
+Host script results:
+|_clock-skew: mean: -1m39s, deviation: 0s, median: -1m39s
+
+TRACEROUTE (using port 1720/tcp)
+HOP RTT     ADDRESS
+
+# Nmap done at Mon Sep 25 12:27:33 2017 -- 256 IP addresses (171 hosts up) scanned in 8259.14 seconds
